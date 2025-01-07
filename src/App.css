@@ -1,6 +1,9 @@
 :root{
-  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+  --box-shadow: 5px 3px 10px 10px rgba(101, 175, 10, 0.5);
   --bg-color:rgb(19, 71, 74);
+}
+.navcolor{
+  background-color: var(--bg-color);
 }
 .nav-link:hover {
   color: #fff; /* Change text color */
@@ -70,4 +73,21 @@
     transform: translate(0px -0px);
     box-shadow: 10px 10px 100px 50px rgb(50,55,205);
   }
+}
+
+/* experience css*/
+.ex{
+  width: 900px;
+}
+.ex-items{
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  width: 800px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+  background-color: var(--bg-color);
 }

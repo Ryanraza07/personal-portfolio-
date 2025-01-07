@@ -4,7 +4,7 @@ import React from 'react';
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container-fluid">
+            <div className="container-fluid navcolor">
                 <a className="navbar-brand ms-5"  href="#" style={{fontSize:'2rem'}}> Portfolio</a>
                 <button
                     className="navbar-toggler"
