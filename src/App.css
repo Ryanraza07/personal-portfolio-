@@ -91,3 +91,32 @@
   box-shadow: var(--box-shadow);
   background-color: var(--bg-color);
 }
+
+/* Skills css starts here*/
+.skills{
+  width: 900px;
+}
+
+
+.skills .items{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+
+
+}
+.skills .items .item{
+  width: calc(33.33%);
+  margin: 30px;;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+.skills .items .item img{
+  width:70px;
+ 
+}
