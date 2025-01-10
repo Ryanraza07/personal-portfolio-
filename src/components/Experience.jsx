@@ -2,13 +2,15 @@ import React from "react";
 import experience from './data/experience.json';
 function Experience(){
     return(
-        <div className="container ex">
+        <div className="container ex" id="Experience">
             <h1>EXPERIENCE</h1>
             { 
               experience.map((data) => {
                 return(
                  <>
-                 <div key={data.id} className="ex-items text-center my-5">
+                 <div key={data.id} className="ex-items text-center my-5"
+                 data-aos="zoom-in"
+                 data-aos-duration="1000">
                  <div className="left">
                  <img src={`/assets/${data.imageSrc}`} alt="" />
                  </div>

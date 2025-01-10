@@ -48,6 +48,12 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
+.note{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
 
 @keyframes superman{
   0%{
@@ -119,4 +125,33 @@ flex-wrap: wrap;
 .skills .items .item img{
   width:70px;
  
+}
+
+
+/* Contact css starts here*/
+.contact-icons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.contact-icons .items{
+  background-color:black;
+  width: 70px;
+  height: 70px;
+  margin : 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid yellow;
+  border-radius: 50%;
+
+}
+.contact-icons .items .icons{
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+.contact-icons .items:hover{
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
 }

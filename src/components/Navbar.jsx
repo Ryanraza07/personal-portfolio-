@@ -3,7 +3,9 @@ import React from 'react';
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light"
+        data-aos="fade-down"
+        data-aos-duration="1000">
             <div className="container-fluid navcolor">
                 <a className="navbar-brand ms-5"  href="#" style={{fontSize:'2rem'}}> Portfolio</a>
                 <button
@@ -20,16 +22,19 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto me-5">
                         <li className="nav-item mx-3">
-                            <a className="nav-link active hover-effect" href="#">Home</a>
+                            <a className="nav-link active hover-effect" href="#Home">Home</a>
                         </li>
                         <li className="nav-item mx-3">
-                            <a className="nav-link" href="#">About</a>
+                            <a className="nav-link" href="#Experience">Experience</a>
                         </li>
                         <li className="nav-item mx-3">
-                            <a className="nav-link" href="#">Services</a>
+                            <a className="nav-link" href="#Skills">Skills</a>
                         </li>
                         <li className="nav-item mx-3">
-                            <a className="nav-link" href="#">Contact</a>
+                            <a className="nav-link" href="#Projects">Projects</a>
+                        </li>
+                        <li className="nav-item mx-3">
+                            <a className="nav-link" href="#Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
