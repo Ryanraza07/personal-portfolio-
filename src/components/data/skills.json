@@ -20,12 +20,12 @@
     "imageSrc": "skills/node.png"
   },
   {
-    "title":"Firebase",
-    "imageSrc":"skills/firebase.png"
+    "title":"Express",
+    "imageSrc":"/skills/pngegg.png"
   },
   {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
+    "title": "Docker",
+    "imageSrc": "skills/docker.png"
   },
   {
     "title": "MongoDB",

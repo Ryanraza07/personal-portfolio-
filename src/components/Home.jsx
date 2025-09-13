@@ -12,7 +12,7 @@ function Home() {
         "Welcome to my Portfolio",
         "My Name is Altaf Raza",
         "I am a Full Stack Developer",
-        "Android Developer (React Native)",
+        "Cloud and DevOps Engineer",
       ],
       typeSpeed: 50,
       backSpeed: 50,
@@ -31,7 +31,7 @@ function Home() {
       data-aos="fade-up-right"
       data-aos-duration="1000">
         <h1 ref={typedRef}></h1>
-        <a href="/assets/resume.pdf" className="btn btn-outline-warning">
+        <a href="/assets/Altaf-resume.pdf" className="btn btn-outline-warning">
           Download Resume
         </a>
       </div>

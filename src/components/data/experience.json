@@ -1,41 +1,16 @@
 [
   {
     "id": 1,
-    "role": "Senior Software Development Engineer SDE - II",
-    "organisation": "Google",
-    "startDate": "Sept, 2023",
-    "endDate": "Present",
-    "location": "CA,United State",
+    "role": "Junior python devOps Engineer at Dhex  ",
+    "organisation": "Dhex Media",
+    "startDate": "Sept, 2024",
+    "endDate": "Dec 2024",
+    "location": "Lko,India",
     "experiences": [
-      "Worked on Google Gmail",
-      "Worked with the Google Bard Team"
+      "Integrated Generative AI",
+      "Custom LLM with real time Internet"
     ],
-    "imageSrc": "company/google.png"
-  },
-  {
-    "id": 2,
-    "role": "Software Development Engineer SDE - I",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2022",
-    "endDate": "Aug, 2023",
-    "location": "London, UK",
-    "experiences": [
-      "Worked on Windows 10 terminal",
-      "Worked on Window 11 Upcoming features"
-    ],
-    "imageSrc": "company/microsoft.png"
-  },
-  {
-    "id": 3,
-    "role": "Software Development Engineer - Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2021",
-    "endDate": "Jun, 2022",
-    "location": "Bengluru, India",
-    "experiences": [
-      "Worked on Nextflix payment system",
-      "Helped to create UI for video player"
-    ],
-    "imageSrc": "company/netflix.png"
+    "imageSrc": "company/python.png"
   }
+  
 ]

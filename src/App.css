@@ -1,36 +1,89 @@
 :root{
   --box-shadow: 5px 3px 10px 10px rgba(101, 175, 10, 0.5);
-  --bg-color:rgb(19, 71, 74);
+  --bg-color:rgb(28, 115, 119);
 }
-.navcolor{
+
+html, 
+body {
+  background-color: black !important;
+  color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#root {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.skills h1{
+  color:rgb(231, 221, 221)
+}
+
+.ex h1{
+  color:rgb(231, 221, 221)
+}
+
+.projects h1{
+  color:rgb(231, 221, 221)
+}
+
+.contact h1{
+  color:rgb(231, 221, 221)
+}
+
+.container, 
+.container-fluid {
+  background-color: black;
+}
+
+body {
+  background-color: black;
+  color: white; 
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navcolor {
   background-color: var(--bg-color);
+  margin: 0 !important;
+  padding: 1rem 0 !important;
 }
+
 .nav-link:hover {
-  color: #fff; /* Change text color */
+  color: #fff; 
   border-bottom: 3px solid yellow;
   
- /* background-color: #d77df3; /* Background color on hover */
-  transform: scale(1.1); /* Slightly zoom in */
-  transition: all 0.3s ease; /* Smooth transition */
+ 
+  transform: scale(1.1); 
+  transition: all 0.3s ease; 
 
-/*home css*/
+
 }
 .home{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80vh;
-  
+  padding: 20px;
+  flex-wrap: wrap; 
 }
 .home .left{
   background-color: var(--bg-color);
   border: 2px solid yellow;
-  width: 600px;
+  width: 100%; 
+  max-width: 600px; 
   border-radius: 2%;
   text-align: center;
   padding: 20px;
   box-shadow: var(--box-shadow);
- 
+  margin-bottom: 20px; 
 }
 
 .home .right .img{
@@ -39,8 +92,9 @@
   align-items: center;
 }
 .home .right .img img{
-  width: 250px;
-  height: 250px;
+  width: 100%; 
+  max-width: 250px; 
+  height: auto; 
   border: 5px solid yellow;
   border-radius: 100%;
   
@@ -81,28 +135,55 @@
   }
 }
 
-/* experience css*/
+
 .ex{
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 15px;
 }
 .ex-items{
   display: flex;
   padding: 30px;
   justify-content: space-between;
   align-items: center;
-  margin: 30px;
-  width: 800px;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  flex-wrap: wrap;
   border-radius: 10px;
   border: 1px solid yellow;
   box-shadow: var(--box-shadow);
   background-color: var(--bg-color);
 }
-
-/* Skills css starts here*/
-.skills{
-  width: 900px;
+.ex-items img {
+  width: 60px;  
+  height: 60px; 
+  object-fit: contain; 
+  margin-right: 15px;
 }
 
+
+@media screen and (max-width: 768px) {
+  .ex-items img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ex-items img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+.skills{
+  width: 100%;
+  max-width: 900px;
+}
 
 .skills .items{
 display: flex;
@@ -113,8 +194,8 @@ flex-wrap: wrap;
 
 }
 .skills .items .item{
-  width: calc(33.33%);
-  margin: 30px;;
+  width: calc(33.33% - 60px); 
+  margin: 15px;
   background-color: black;
   text-align: center;
   padding: 20px;
@@ -128,7 +209,7 @@ flex-wrap: wrap;
 }
 
 
-/* Contact css starts here*/
+
 .contact-icons{
    display: flex;
    justify-content: center;
@@ -154,4 +235,36 @@ flex-wrap: wrap;
 .contact-icons .items:hover{
   background-color: var(--bg-color);
   box-shadow: var(--box-shadow);
+}
+
+
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .skills .items .item {
+    width: calc(50% - 30px); 
+  }
+
+  .ex-items {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills .items .item {
+    width: calc(100% - 30px); 
+  }
+
+  .contact-icons {
+    flex-wrap: wrap;
+  }
+
+  .contact-icons .items {
+    margin: 10px;
+  }
 }
