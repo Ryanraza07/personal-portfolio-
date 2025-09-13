@@ -23,8 +23,9 @@ function App(){
   <Home />
   <Note />
   <Experience/>
-  <Skills />
   <Projects />
+  <Skills />
+  
   <Contact />
   </>
 

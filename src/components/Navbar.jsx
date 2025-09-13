@@ -3,9 +3,10 @@ import React from 'react';
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light"
+        <nav className="navbar navbar-expand-lg navbar-dark" // removed bg-light
         data-aos="fade-down"
-        data-aos-duration="1000">
+        data-aos-duration="1000"
+        style={{ margin: 0, padding: 0 }}> {/* Added style */}
             <div className="container-fluid navcolor">
                 <a className="navbar-brand ms-5"  href="#" style={{fontSize:'2rem'}}> Portfolio</a>
                 <button
